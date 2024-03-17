@@ -84,7 +84,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     min-width: 80vw;
-    /* min-height: 80vh; */
+    min-height: 75vh;
 }
 #firstSection p, #secondSection p, #thirdSection p, #fourthSection p, #fifthSection p,
 #sixthSection p, #seventhSection p, #eighthSection p, #ninthSection p, #tenthSection p {
@@ -302,6 +302,7 @@ We will build a Responsive Web Design using media queries
     #firstSection, #secondSection, #thirdSection, #fourthSection, #fifthSection, #sixthSection, #seventhSection,
     #eighthSection, #ninthSection, #tenthSection {
         min-width: 90vw;
+        min-height: auto;
     }
 
     #firstSection p, #firstSection button, #secondSection p, #secondSection button,
