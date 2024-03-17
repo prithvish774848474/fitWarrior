@@ -264,7 +264,7 @@ body {
 We now handle the case when the Web Application runs on mobile phones.
 We will build a Responsive Web Design using media queries
 */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 800px) {
     #firstPage header {
         font-size: 5vw;
         top: 25%;
