@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(225deg, #000000 40%, #150a38 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+#firstPage {
+    height: 100vh;
+    position: relative;
+}
+#firstPage header {
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 15%; left: 5%;
+}
+#firstPage footer {
+    color: #fff;
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    bottom: 15%; left: 5%;
+}
+#firstPage footer span {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 0 0.25em;
+    color: #000;
+    background-color: rgb(200, 200, 200);
+}
+#firstPage button {
+    position: absolute;
+    bottom: 10%; right: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 1em;
+    color: #150a38;
+    background-color: #fff;
+    border: none;
+    border-radius: 2em;
+    transition-property: transform;
+    -o-transition-property: transform;
+    -moz-transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
+}
+#firstPage button:hover {
+    cursor: pointer;
+    transform: scale(80%);
+}
+#firstPage img {
+    position: absolute;
+    top: 1%; right: 1%;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+}
+#secondPage {
+    height: 100vh;
+    position: relative;
+    display: none;
+}
+#secondPage progress {
+    display: block;
+    width: 100%;
+}
+#secondSection, #thirdSection, #fourthSection, #fifthSection, #sixthSection,
+#seventhSection, #eighthSection, #ninthSection, #tenthSection {
+    display: none;
+}
+#firstSection, #secondSection, #thirdSection, #fourthSection, #fifthSection,
+#sixthSection, #seventhSection, #eighthSection, #ninthSection, #tenthSection {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    min-width: 80vw;
+    /* min-height: 80vh; */
+}
+#firstSection p, #secondSection p, #thirdSection p, #fourthSection p, #fifthSection p,
+#sixthSection p, #seventhSection p, #eighthSection p, #ninthSection p, #tenthSection p {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+#firstSection button, #secondSection button, #thirdSection button, #fourthSection button, #fifthSection button,
+#sixthSection button, #seventhSection button, #eighthSection button, #ninthSection button, #tenthSection button {
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    border: none;
+    border-radius: 2em;
+    background-color: lightgreen;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    transition-property: transform;
+    -o-transition-property: transform;
+    -moz-transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
+}
+#firstSection button:hover, #secondSection button:hover, #thirdSection button:hover, #fourthSection button:hover,
+#fifthSection button:hover, #sixthSection button:hover, #seventhSection button:hover, #eighthSection button:hover,
+#ninthSection button:hover, #tenthSection button:hover {
+    background-color: darkgreen;
+    color: #fff;
+    transform: scale(90%);
+}
+#firstSection button:first-child, #secondSection button:first-child, #thirdSection button:first-child,
+#fourthSection button:first-child, #fifthSection button:first-child, #sixthSection button:first-child,
+#seventhSection button:first-child, #eighthSection button:first-child, #ninthSection button:first-child,
+#tenthSection button:first-child {
+    left: 0;
+}
+#firstSection button:last-child, #secondSection button:last-child, #thirdSection button:last-child,
+#fourthSection button:last-child, #fifthSection button:last-child, #sixthSection button:last-child,
+#seventhSection button:last-child, #eighthSection button:last-child, #ninthSection button:last-child,
+#tenthSection button:last-child {
+    right: 0;
+}
+#thirdSection input[type="text"], #fourthSection input[type="text"], #fifthSection input[type="text"],
+#sixthSection input[type="text"], #seventhSection input[type="text"], #ninthSection input[type="text"],
+#tenthSection input[type="text"] {
+    max-width: fit-content;
+    text-align: center;
+    font-size: 0.5em;
+    background-color: lightyellow;
+    border: none;
+}
+#thirdSection input[type="button"], #fourthSection input[type="button"], #fifthSection input[type="button"],
+#sixthSection input[type="button"], #seventhSection input[type="button"], #ninthSection input[type="button"],
+#tenthSection input[type="button"] {
+    max-width: fit-content;
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: bold;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+}
+#eighthSection section {
+    color: #fff;
+    text-align: left;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#eighthSection section input {
+    accent-color: darkgreen;
+    transform: scale(1.2);
+    -ms-transform: sclae(1.2);
+    -o-transform: sclae(1.2);
+    -moz-transform: scale(1.2);
+    border: none;
+}
+#thirdPage {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80vw;
+    border-style: solid;
+    border-width: 0.0625em;
+    border-color: #ddd;
+    border-radius: 2em;
+    box-shadow: 0 0 0.5em #ddd;
+    text-align: center;
+    margin: 5vh auto;
+    padding: 0.5em;
+    column-gap: 0.25em;
+}
+#thirdPage * {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+#thirdPage .decorativeEssentials {
+    font-size: 1.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0.5em 0;
+}
+#thirdPage header {
+    grid-column: 1 / span 2;
+    color: lightyellow;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 0.0625em;
+    text-decoration-color: lightyellow;
+    margin-bottom: 0.5em;
+}
+#thirdPage button {
+    border-radius: 2em;
+    background-image: linear-gradient(45deg, #99FFFF 30%, #AFEEEE 100%);
+    background-image: -o-linear-gradient(45deg, #99FFFF 30%, #AFEEEE 100%);
+    background-image: -moz-linear-gradient(45deg, #99FFFF 30%, #AFEEEE 100%);
+    background-image: -webkit-linear-gradient(45deg, #99FFFF 30%, #AFEEEE 100%);
+    color: #000;
+    border: none;
+}
+#thirdPage button:hover {
+    background-image: linear-gradient(135deg, #FBCEB1 30%, #FFA07A 100%);
+    cursor: pointer;
+}
+#thirdPage div {
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25em;
+    padding: 0.25em 0;
+    border-bottom: 0.0625em solid yellow;
+}
+#thirdPage div:nth-child(18), #thirdPage div:nth-child(19) {
+    border-bottom: none;
+    margin-bottom: 0.5em;
+}
+#fourthPage {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+#fourthPage section {
+    border-style: solid;
+    border-width: 0.0625em;
+    border-color: #ddd;
+    border-radius: 2em;
+    box-shadow: 0 0 0.5em #ddd;
+    max-width: 75%;
+    margin: 1em auto;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+#fourthPage p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/* 
+We now handle the case when the Web Application runs on mobile phones.
+We will build a Responsive Web Design using media queries
+*/
+@media only screen and (max-width: 430px) {
+    #firstPage header {
+        font-size: 5vw;
+        top: 25%;
+    }
+
+    #firstPage footer {
+        font-size: 3.5vw;
+        bottom: 30%;
+    }
+
+    #firstPage button {
+        right: 50%;
+        transform: translate(50%);
+        display: block;
+        min-width: 80%;
+    }
+
+    #firstPage button:hover {
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    #firstPage button:active {
+        background-color: green;
+        color: #fff;
+    }
+
+    #firstPage img {
+        right: 50%;
+        transform: translate(50%);
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #firstSection, #secondSection, #thirdSection, #fourthSection, #fifthSection, #sixthSection, #seventhSection,
+    #eighthSection, #ninthSection, #tenthSection {
+        min-width: 90vw;
+    }
+
+    #firstSection p, #firstSection button, #secondSection p, #secondSection button,
+    #thirdSection p, #thirdSection button, #fourthSection p, #fourthSection button,
+    #fifthSection p, #fifthSection button, #sixthSection p, #sixthSection button,
+    #seventhSection p, #seventhSection button, #eighthSection p, #eighthSection button,
+    #ninthSection p, #ninthSection button, #tenthSection p, #tenthSection button {
+        font-size: 2em;
+    }
+
+    #firstSection button, #secondSection button, #thirdSection button, #fourthSection button, #fifthSection button,
+    #sixthSection button, #seventhSection button, #eighthSection button, #ninthSection button, #tenthSection button {
+        position: static;
+        display: inline-block;
+        min-width: 100%;
+        margin-top: 0.25em;
+    }
+    
+    #fourthSection input[type="text"], #fourthSection input[type="button"],
+    #fifthSection input[type="text"], #fifthSection input[type="button"],
+    #sixthSection input[type="text"], #sixthSection input[type="button"],
+    #seventhSection input[type="text"], #seventhSection input[type="button"] ,
+    #ninthSection input[type="text"], #ninthSection input[type="button"],
+    #tenthSection input[type="text"], #tenthSection input[type="button"]{
+        display: inline-block;
+        min-width: 90vw;
+        font-size: 0.6em;
+    }
+
+    #eighthSection section input:not(:first-child) {
+        margin-top: 2em;
+    }
+
+    #thirdPage {
+        min-width: 90vw;
+    }
+}

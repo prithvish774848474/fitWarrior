@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="fit, gym, body, composition, fat, slim, workout, BMI, BMR, muscles">
+        <meta name="description" content="Know about your body composition">
+        <meta name="author" content="Prithvish Sarkar">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="fitWarrior.css">
+        <title>Body Composition</title>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </head>
+    <body">
+        <div id="firstPage">
+            <header>
+                Are You Fit? <br> Are You Healthy? <br> Know Your Physical Statistics Better!
+            </header>
+            <footer>
+                Welcome to <span>Fit Warrior</span> ! <br>
+                Want to know your physical health statistics? <br>
+                This Application informs you of your <br><br>
+                <li>Body Mass Index (BMI)</li>
+                <li>Basal Matabolic Rate (BMR)</li>
+                <li>Body Fat Percentage and</li>
+                <li>Maintenance Calories</li>
+            </footer>
+            <button>Let's Start</button>
+            <img src="fitWarriorRockImage.png">
+        </div>
+        <div id="secondPage">
+            <progress value="10" min="0" max="100"></progress>
+            <section id="firstSection">
+                <p>Choose the measurment system you are most comfortable with &rarr;</p>
+                <button title="Meter-Kilogram-Second system" value="Metric">Metric</button>
+                <button title="Foot-Pound-Second system" value="Imperial">Imperial</button>
+            </section>
+            <section id="secondSection">
+                <p>Male and Female have different body composition, hence we need to know your Gender &rarr;</p>
+                <button value="Male">Male</button>
+                <button value="Female">Female</button>
+            </section>
+            <section id="thirdSection">
+                <p>
+                    Hello! What's your age my fellow warrior? <br> 
+                    <input type="text" maxlength="2" placeholder="25" title="Your age must be in between 18 and 99">
+                    <input type="button" value="Go!">
+                </p>
+                <button value="toSecondSection">&larr; Previous</button>
+                <button value="toFourthSection">Next &rarr;</button>
+            </section>
+            <section id="fourthSection">
+                <p>
+                    Enter your height my fellow warrior &rarr; <br>
+                    <input type="text" maxlength="3" placeholder="175 (in centimeters)">
+                    <input type="button" value="Go!" data-button-for-system="Metric">
+                    <input type="text" maxlength="1" placeholder="5 (in feet)">
+                    <input type="text" maxlength="2" placeholder="6 (in inches)">
+                    <input type="button" value="Go!" data-button-for-system="Imperial">
+                </p>
+                <button value="toThirdSection">&larr; Previous</button>
+                <button value="toFifthSection">Next &rarr;</button>
+            </section>
+            <section id="fifthSection">
+                <p>
+                    Enter your weight my fellow warrior &rarr; <br>
+                    <input type="text" maxlength="3" placeholder="75 (in kilograms)">
+                    <input type="button" value="Go!" data-button-for-system="Metric">
+                    <input type="text" maxlength="3" placeholder="165 (in pounds)">
+                    <input type="button" value="Go!" data-button-for-system="Imperial">
+                </p>
+                <button value="toFourthSection">&larr; Previous</button>
+                <button value="toSixthSection">Next &rarr;</button>
+            </section>
+            <section id="sixthSection">
+                <p>
+                    Body Fat Percentage calculation requires your neck circumference! <br>
+                    Enter your neck measure &rarr; <br>
+                    <input type="text" maxlength="2" placeholder="38 (in centimeters)">
+                    <input type="button" value="Go!" data-button-for-system="Metric">
+                    <input type="text" maxlength="2" placeholder="15 (in inches)">
+                    <input type="button" value="Go!" data-button-for-system="Imperial">
+                </p>
+                <button value="toFifthSection">&larr; Previous</button>
+                <button value="toSeventhSection">Next &rarr;</button>
+            </section>
+            <section id="seventhSection">
+                <p>
+                    Body Fat Percentage calculation requires your waist circumference! <br>
+                    Enter your waist measure &rarr; <br>
+                    <input type="text" maxlength="2" placeholder="84 (in centimeters)">
+                    <input type="button" value="Go!" data-button-for-system="Metric">
+                    <input type="text" maxlength="2" placeholder="35 (in inches)">
+                    <input type="button" value="Go!" data-button-for-system="Imperial">
+                </p>
+                <button value="toSixthSection">&larr; Previous</button>
+                <button value="toEighthSection">Next &rarr;</button>
+            </section>
+            <section id="eighthSection">
+                <p>
+                    Choose an Activity Level that best fits your routine &rarr;
+                    <section data-container-for="radioButtons">
+                        <input type="radio" name="exerciseFrequency" value="Little or No Exercise" data-value="1.2">
+                        Little or No Exercise <br>
+                        <input type="radio" name="exerciseFrequency" value="Exercise 1 - 3 times per week" data-value="1.375">
+                        Exercise 1 - 3 times per week <br>
+                        <input type="radio" name="exerciseFrequency" value="Exercise 4 - 5 times per week" data-value="1.55">
+                        Exercise 4 - 5 times per week <br>
+                        <input type="radio" name="exerciseFrequency" value="Intense Exercise 6 - 7 times per week" data-value="1.725">
+                        Intense Exercise 6 - 7 times per week <br>
+                        <input type="radio" name="exerciseFrequency" value="Very Intense Daily Exercise" data-value="1.9">
+                        Very Intense Daily Exercise
+                    </section>
+                </p>
+                <button value="toSeventhSection">&larr; Previous</button>
+                <button value="toNextSection">Next &rarr;</button>
+            </section>
+            <section id="ninthSection">
+                <p>
+                    Body Fat Percentage calculation requires your hip circumference! <br>
+                    Enter your hip measure &rarr; <br>
+                    <input type="text" maxlength="3" placeholder="90 (in centimeters)">
+                    <input type="button" value="Go!" data-button-for-system="Metric">
+                    <input type="text" maxlength="2" placeholder="36 (in inches)">
+                    <input type="button" value="Go!" data-button-for-system="Imperial">
+                </p>
+                <button value="toEightSection">&larr; Previous</button>
+                <button value="toTenthSection">Next &rarr;</button>
+            </section>
+            <section id="tenthSection">
+                <p>
+                    Help us to improve our calculations. <br>
+                    Please enter your Body Fat Percentage? <br>
+                    <input type="text" maxlength="2" placeholder="15 (in percentage)">
+                    <input type="button" value="Go!">
+                </p>
+                <button value="toPreviousSection">&larr; Previous</button>
+                <button value="toNextPage">Skip &rarr;</button>
+            </section>
+        </div>
+        <div id="thirdPage">
+            <header class="decorativeEssentials">Summary of your Details</header>
+            <div>Your Gender is</div><div>Gender Value</div>
+            <div>Your Age is</div><div>Age Value</div>
+            <div>Your Height is</div><div>Height Value</div>
+            <div>Your Weight is</div><div>Weight Value</div>
+            <div>Your Neck Circumference is</div><div>Neck Value</div>
+            <div>Your Waist Circumference is</div><div>Waist Value</div>
+            <div>Your Activity Level is</div><div>Activity Value</div>
+            <div data-gender="female">Your Hip Circumference is</div><div data-gender="female">Hip Value</div>
+            <div>Your Body Fat Percentage is</div><div>Fat Value</div>
+            <button class="decorativeEssentials">&lArr; Refill Inputs Again</button>
+            <button class="decorativeEssentials">Proceed to Calculate &rArr;</button>
+        </div>
+        <div id="fourthPage">
+            <section id="BMI">
+                <p data-value="BMI-value">
+                    Your Body Mass Index (BMI) is &rarr;
+                    <br>
+                    <span>24 kg/m <sup>2</sup></span>
+                </p>
+                <p data-value="BMI-category">
+                    Your fall under <span>Normal Weight</span> category
+                </p>
+                <p data-value="BMI-comment">
+                    Eat a variety of fruits &amp; vegetables, and drink adequate amount of water.
+                    Daily moderate exercise will keep you healthy.
+                </p>
+            </section>
+            <section id="BFP">
+                <p>Your Body Fat Percentage is &rarr;</p>
+                <p>
+                    *<span></span> according to US Navy Method
+                    <br>
+                    *<span></span> according to BMI Method
+                </p>
+            </section>
+            <section id="BMR">
+                <p>Your Basal Metabolic Rate (BMR) is &rarr;</p>
+                <p>
+                    *<span></span> according to Mifflin-St Joer Equation
+                    <br>
+                    *<span></span> according to Harris-Benedict Equation
+                    <br>
+                    *<span></span> according to Katch-McArdle Equation
+                </p>
+            </section>
+            <section id="maintenanceCalorie">
+                <p>Your Daily Calorie Intake should be &rarr;</p>
+                <p>
+                    *<span></span> according to Mifflin-St Joer Equation
+                    <br>
+                    *<span></span> according to Harris-Benedict Equation
+                    <br>
+                    *<span></span> according to Katch-McArdle Equation
+                </p>
+                <p>To mildly increase (or reduce) weight, add (or subtract) 500 kcal/day from your diet!</p>
+            </section>
+        </div>
+        <script src="fitWarrior.js" async defer></script>
+    </body>
+</html>
